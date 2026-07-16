@@ -1,387 +1,72 @@
-/* ===== BASE ===== */
-body.M&M-body {
-    margin: 0;
-    font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    background: #0b1020;
-    color: #ffffff;
-}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>M&M FRANCE SERVICES INTER</title>
+    <style>
+        /* CSS INTÉGRÉ POUR ASSURER L'AFFICHAGE */
+        body { font-family: 'Poppins', sans-serif; margin: 0; padding: 0; color: #333; }
+        .M&M-container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        
+        /* Header */
+        .M&M-header { background: #f8f9fa; padding: 20px 0; border-bottom: 2px solid #eee; }
+        .egf-header-inner { display: flex; justify-content: space-between; align-items: center; }
+        .M&M-logo-block { display: flex; align-items: center; }
+        .M&M-logo { height: 60px; margin-right: 15px; }
+        .M&M-nav { display: flex; gap: 20px; }
+        .M&M-nav-link { text-decoration: none; color: #333; font-weight: 500; }
+        
+        /* Hero Section */
+        .M&M-hero { padding: 60px 0; background: #fff; }
+        .M&M-hero-inner { display: flex; gap: 40px; align-items: center; }
+        .M&M-hero-text { flex: 1; }
+        .M&M-highlight-blue { color: #007bff; }
+        .M&M-highlight-red { color: #dc3545; }
+        
+        /* Boutons */
+        .M&M-btn { padding: 12px 25px; border-radius: 5px; text-decoration: none; display: inline-block; margin-top: 10px; }
+        .M&M-btn-primary { background: #007bff; color: white; }
+        
+        /* Carte */
+        .M&M-hero-card { flex: 0 0 350px; background: #f4f4f4; padding: 30px; border-radius: 10px; }
+    </style>
+</head>
+<body>
 
-.M&M-container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
+    <header class="M&M-header">
+        <div class="M&M-container egf-header-inner">
+            <div class="M&M-logo-block">
+                <!-- Remplacez par le nom exact de votre fichier image -->
+                <img src="logo_mm.png" alt="Logo" class="M&M-logo">
+                <div class="M&M-logo-text">
+                   <strong>M&M FRANCE SERVICES INTER</strong><br>
+                   <span>Informatique & Gestion Immobilière</span>
+                </div>
+            </div>
+            <nav class="M&M-nav">
+                <a href="#">Accueil</a>
+                <a href="#">À propos</a>
+                <a href="#">Informatique</a>
+                <a href="#">Gestion immobilière</a>
+                <a href="#">Tarifs</a>
+                <a href="#">Contact</a>
+            </nav>
+        </div>
+    </header>
 
-/* ===== HEADER ===== */
-.M&M-header {
-    background: rgba(5, 10, 30, 0.95);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    backdrop-filter: blur(10px);
-}
+    <section class="M&M-hero">
+        <div class="M&M-container M&M-hero-inner">
+            <div class="M&M-hero-text">
+                <h1>Solutions <span class="M&M-highlight-blue">informatiques</span> & <span class="M&M-highlight-red">gestion immobilière</span></h1>
+                <p>M&M FRANCE SERVICES INTER accompagne les propriétaires, investisseurs et entreprises...</p>
+                <a href="#" class="M&M-btn M&M-btn-primary">Demander un accompagnement</a>
+            </div>
+            <div class="M&M-hero-card">
+                <h2>Un seul partenaire, deux expertises.</h2>
+                <p>Informatique, réseaux, sécurité, gestion de biens… Vous déléguez, nous orchestrons.</p>
+            </div>
+        </div>
+    </section>
 
-.M&M-header-inner {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 12px 0;
-}
-
-.M&M-logo-block {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.M&M-logo {
-    height: 48px;
-    width: auto;
-}
-
-.M&M-logo-text {
-    display: flex;
-    flex-direction: column;
-}
-
-.M&M-logo-title {
-    font-weight: 700;
-    font-size: 16px;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-}
-
-.M&M-logo-subtitle {
-    font-size: 12px;
-    opacity: 0.8;
-}
-
-.M&M-nav {
-    display: flex;
-    gap: 18px;
-    align-items: center;
-}
-
-.M&M-nav-link {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 14px;
-    opacity: 0.8;
-    transition: 0.2s;
-}
-
-.M&M-nav-link:hover {
-    opacity: 1;
-}
-
-.M&M-nav-active {
-    opacity: 1;
-    font-weight: 600;
-}
-
-.M&M-nav-cta {
-    padding: 8px 16px;
-    border-radius: 999px;
-    background: linear-gradient(135deg, #003B8E, #C8102E);
-    font-weight: 500;
-}
-
-/* ===== HERO ===== */
-.M&M-hero {
-    padding: 60px 0 40px;
-    background: radial-gradient(circle at top left, #003B8E 0, #0b1020 45%, #C8102E 100%);
-}
-
-.M&M-hero-inner {
-    display: grid;
-    grid-template-columns: minmax(0, 3fr) minmax(0, 2.5fr);
-    gap: 40px;
-    align-items: center;
-}
-
-.M&M-hero h1 {
-    font-size: 32px;
-    line-height: 1.3;
-    margin-bottom: 16px;
-}
-
-.M&M-highlight-blue {
-    color: #4da3ff;
-}
-
-.M&M-highlight-red {
-    color: #ff4b6a;
-}
-
-.M&M-hero-sub {
-    font-size: 14px;
-    max-width: 520px;
-    opacity: 0.9;
-}
-
-.M&M-hero-actions {
-    margin-top: 20px;
-    display: flex;
-    gap: 12px;
-    flex-wrap: wrap;
-}
-
-.M&M-btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 20px;
-    border-radius: 999px;
-    font-size: 14px;
-    text-decoration: none;
-    cursor: pointer;
-    border: none;
-    transition: 0.2s;
-}
-
-.egf-btn-primary {
-    background: linear-gradient(135deg, #003B8E, #C8102E);
-    color: #ffffff;
-    font-weight: 600;
-}
-
-.M&M-btn-primary:hover {
-    filter: brightness(1.1);
-}
-
-.M&M-btn-secondary {
-    background: transparent;
-    border: 1px solid rgba(255, 255, 255, 0.4);
-    color: #ffffff;
-}
-
-.M&M-btn-secondary:hover {
-    background: rgba(255, 255, 255, 0.08);
-}
-
-.M&M-tag {
-    display: inline-flex;
-    padding: 4px 10px;
-    border-radius: 999px;
-    border: 1px solid rgba(255, 255, 255, 0.25);
-    font-size: 11px;
-    opacity: 0.9;
-}
-
-.M&M-hero-tags {
-    margin-top: 18px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-}
-
-/* HERO CARD */
-.M&M-hero-card {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.M&M-hero-card-inner {
-    background: rgba(5, 10, 30, 0.9);
-    border-radius: 18px;
-    padding: 20px 22px;
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
-}
-
-.M&M-hero-card-inner h2 {
-    font-size: 20px;
-    margin-top: 0;
-}
-
-.M&M-hero-card-inner p {
-    font-size: 13px;
-    opacity: 0.9;
-}
-
-.M&M-hero-list {
-    list-style: none;
-    padding-left: 0;
-    margin: 12px 0;
-    font-size: 13px;
-    opacity: 0.95;
-}
-
-.M&M-hero-list li {
-    margin-bottom: 4px;
-}
-
-.M&M-link {
-    font-size: 13px;
-    color: #4da3ff;
-    text-decoration: none;
-}
-
-.M&M-link:hover {
-    text-decoration: underline;
-}
-
-/* ===== SECTIONS ===== */
-.M&M-section {
-    padding: 50px 0;
-}
-
-.M&M-section-split .egf-section-inner {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 30px;
-}
-
-.M&M-section h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.M&M-section p {
-    font-size: 14px;
-    opacity: 0.9;
-}
-
-.M&M-list {
-    list-style: none;
-    padding-left: 0;
-    margin-top: 10px;
-    font-size: 13px;
-    opacity: 0.95;
-}
-
-.M&M-list li {
-    margin-bottom: 4px;
-}
-
-.M&M-block-tech {
-    background: linear-gradient(135deg, rgba(0, 59, 142, 0.25), rgba(11, 16, 32, 0.9));
-    border-radius: 16px;
-    padding: 20px;
-    border: 1px solid rgba(77, 163, 255, 0.4);
-}
-
-.M&M-block-immo {
-    background: linear-gradient(135deg, rgba(200, 16, 46, 0.25), rgba(11, 16, 32, 0.9));
-    border-radius: 16px;
-    padding: 20px;
-    border: 1px solid rgba(255, 75, 106, 0.4);
-}
-
-/* SECTION CONFIANCE */
-.M&M-section-confidence {
-    background: #0f1425;
-}
-
-.M&M-grid-3 {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 20px;
-    margin-top: 24px;
-}
-
-.M&M-card {
-    background: rgba(5, 10, 30, 0.9);
-    border-radius: 14px;
-    padding: 18px;
-    border: 1px solid rgba(255, 255, 255, 0.06);
-    font-size: 13px;
-}
-
-/* SECTION CTA */
-.M&M-section-cta {
-    background: linear-gradient(135deg, #003B8E, #C8102E);
-}
-
-.M&M-cta-inner {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-}
-
-.M&M-cta-inner h2 {
-    margin: 0 0 8px;
-}
-
-.M&M-cta-inner p {
-    margin: 0;
-    font-size: 14px;
-}
-
-.M&M-cta-actions {
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-}
-
-.M&M-btn-outline {
-    background: transparent;
-    border: 1px solid #ffffff;
-    color: #ffffff;
-}
-
-.M&M-btn-outline:hover {
-    background: rgba(255, 255, 255, 0.15);
-}
-
-/* FOOTER */
-.M&M-footer {
-    border-top: 1px solid rgba(255, 255, 255, 0.08);
-    padding: 18px 0;
-    background: #050816;
-}
-
-.M&M-footer-inner {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 16px;
-    font-size: 12px;
-}
-
-.M&M-footer-title {
-    font-weight: 600;
-}
-
-.M&M-footer-sub {
-    opacity: 0.7;
-    display: block;
-}
-
-.M&M-footer-links a {
-    color: #ffffff;
-    text-decoration: none;
-    margin-left: 12px;
-    opacity: 0.8;
-}
-
-.M&M-footer-links a:hover {
-    opacity: 1;
-}
-
-/* RESPONSIVE */
-@media (max-width: 900px) {
-    .M&M-hero-inner,
-    .M&M-section-split .egf-section-inner,
-    .M&M-grid-3,
-    .M&M-cta-inner,
-    .M&M-footer-inner {
-        grid-template-columns: 1fr !important;
-        flex-direction: column;
-    }
-
-    .M&M-hero-inner {
-        display: block;
-    }
-
-    .M&M-hero-card {
-        margin-top: 30px;
-        justify-content: flex-start;
-    }
-
-    .M&M-nav {
-        display: none; /* version simple pour l’instant sur mobile */
-    }
-}
+</body>
+</html>
