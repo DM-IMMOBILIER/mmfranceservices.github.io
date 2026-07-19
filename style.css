@@ -16,6 +16,16 @@ header {
 }
 
 header .logo img {
+.mm-logo {
+    height: 110px; /* plus grand */
+    transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+/* Animation au survol */
+.mm-logo:hover {
+    transform: scale(1.15);
+    filter: drop-shadow(0 0 10px var(--mm-gold));
+}
     height: 60px;
 }
 
