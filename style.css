@@ -16,6 +16,24 @@ header {
 }
 
 header .logo img {
+.mm-header {
+    background: var(--mm-blue-dark);
+    padding: 20px 40px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+.mm-nav a {
+    color: var(--mm-white);
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+.mm-nav a:hover {
+    background: var(--mm-gold);
+    color: var(--mm-black);
+}
 .mm-logo {
     height: 110px; /* plus grand */
     transition: transform 0.5s ease, filter 0.5s ease;
