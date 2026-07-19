@@ -78,4 +78,55 @@ footer {
     text-align: center;
     border-top: 2px solid var(--mm-gold);
 }
+/* ======= STYLE PREMIUM BLEU + OR ======= */
+
+:root {
+    --mm-blue: #0033cc;
+    --mm-blue-dark: #001a66;
+    --mm-gold: #d4af37;
+    --mm-white: #ffffff;
+    --mm-black: #000000;
+}
+
+/* Logo */
+.mm-logo {
+    height: 110px;
+    transition: transform 0.5s ease, filter 0.5s ease;
+}
+.mm-logo:hover {
+    transform: scale(1.15);
+    filter: drop-shadow(0 0 10px var(--mm-gold));
+}
+
+/* Boutons or */
+.mm-btn-primary {
+    background: var(--mm-gold);
+    color: var(--mm-black);
+    padding: 12px 25px;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.mm-btn-primary:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 15px var(--mm-gold);
+}
+
+/* Bloc premium */
+.mm-premium-block {
+    background: linear-gradient(135deg, var(--mm-blue-dark), var(--mm-blue));
+    padding: 80px 20px;
+    text-align: center;
+    border-bottom: 3px solid var(--mm-gold);
+}
+.mm-premium-title {
+    font-size: 2.2rem;
+    color: var(--mm-gold);
+    margin-bottom: 15px;
+}
+.mm-premium-text {
+    font-size: 1.2rem;
+    color: var(--mm-white);
+    margin-bottom: 25px;
+}
 
