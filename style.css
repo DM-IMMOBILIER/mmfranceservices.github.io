@@ -184,4 +184,11 @@ footer {
     transform: scale(1.08);
     box-shadow: 0 0 15px var(--mm-gold);
 }
+:root {
+    --mm-blue: #0033cc;      /* Bleu royal */
+    --mm-blue-dark: #001a66; /* Bleu profond */
+    --mm-gold: #d4af37;      /* Or élégant */
+    --mm-white: #ffffff;
+    --mm-black: #000000;
+}
 
