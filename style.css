@@ -1,72 +1,80 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <title>M&M FRANCE SERVICES INTER</title>
-    <style>
-        /* CSS INTÉGRÉ POUR ASSURER L'AFFICHAGE */
-        body { font-family: 'Poppins', sans-serif; margin: 0; padding: 0; color: #333; }
-        .M&M-container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
-        
-        /* Header */
-        .M&M-header { background: #f8f9fa; padding: 20px 0; border-bottom: 2px solid #eee; }
-        .egf-header-inner { display: flex; justify-content: space-between; align-items: center; }
-        .M&M-logo-block { display: flex; align-items: center; }
-        .M&M-logo { height: 60px; margin-right: 15px; }
-        .M&M-nav { display: flex; gap: 20px; }
-        .M&M-nav-link { text-decoration: none; color: #333; font-weight: 500; }
-        
-        /* Hero Section */
-        .M&M-hero { padding: 60px 0; background: #fff; }
-        .M&M-hero-inner { display: flex; gap: 40px; align-items: center; }
-        .M&M-hero-text { flex: 1; }
-        .M&M-highlight-blue { color: #007bff; }
-        .M&M-highlight-red { color: #dc3545; }
-        
-        /* Boutons */
-        .M&M-btn { padding: 12px 25px; border-radius: 5px; text-decoration: none; display: inline-block; margin-top: 10px; }
-        .M&M-btn-primary { background: #007bff; color: white; }
-        
-        /* Carte */
-        .M&M-hero-card { flex: 0 0 350px; background: #f4f4f4; padding: 30px; border-radius: 10px; }
-    </style>
-</head>
-<body>
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f7f7f7;
+    color: #333;
+}
 
-    <header class="M&M-header">
-        <div class="M&M-container egf-header-inner">
-            <div class="M&M-logo-block">
-                <!-- Remplacez par le nom exact de votre fichier image -->
-                <img src="logo_mm.png" alt="Logo" class="M&M-logo">
-                <div class="M&M-logo-text">
-                   <strong>M&M FRANCE SERVICES INTER</strong><br>
-                   <span>Informatique & Gestion Immobilière</span>
-                </div>
-            </div>
-            <nav class="M&M-nav">
-                <a href="#">Accueil</a>
-                <a href="#">À propos</a>
-                <a href="#">Informatique</a>
-                <a href="#">Gestion immobilière</a>
-                <a href="#">Tarifs</a>
-                <a href="#">Contact</a>
-            </nav>
-        </div>
-    </header>
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: #1a1a1a;
+}
 
-    <section class="M&M-hero">
-        <div class="M&M-container M&M-hero-inner">
-            <div class="M&M-hero-text">
-                <h1>Solutions <span class="M&M-highlight-blue">informatiques</span> & <span class="M&M-highlight-red">gestion immobilière</span></h1>
-                <p>M&M FRANCE SERVICES INTER accompagne les propriétaires, investisseurs et entreprises...</p>
-                <a href="#" class="M&M-btn M&M-btn-primary">Demander un accompagnement</a>
-            </div>
-            <div class="M&M-hero-card">
-                <h2>Un seul partenaire, deux expertises.</h2>
-                <p>Informatique, réseaux, sécurité, gestion de biens… Vous déléguez, nous orchestrons.</p>
-            </div>
-        </div>
-    </section>
+header .logo img {
+    height: 60px;
+}
 
-</body>
-</html>
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    padding: 120px 20px;
+    background: linear-gradient(135deg, #1a1a1a, #444);
+    color: white;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background: #ff6600;
+    padding: 12px 25px;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+/* Section présentation */
+.presentation {
+    padding: 60px 40px;
+    background: white;
+    text-align: center;
+}
+
+.presentation h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    background: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
